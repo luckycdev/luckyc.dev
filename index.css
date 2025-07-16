@@ -1,8 +1,16 @@
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #0c0d0d;
     color: white;
 }
+
+html {
+  height: 100%;
+  background: 
+    linear-gradient(-45deg, #003804, #00490c, #033113, #003610) 0/ 500%;
+  animation: gradient 15s infinite alternate;
+}
+
+@keyframes gradient { to { background-position: 100% } }
 
 .links {
     transition: 0.3s;
@@ -14,14 +22,16 @@ body {
     color: rgb(0, 148, 0);
 }
 
-.plugingrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+.projectgrid {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.plugincontainer {
+.projectcontainer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -30,51 +40,21 @@ body {
     border-radius: 15px;
     outline: solid;
     outline-color: rgb(0, 0, 0);
-    width: 350px;
-    height: 275px;
+    width: 700px;
+    height: 375px;
     padding-bottom: 70px;
     gap: 10px;
 }
 
-.plugincontainer p {
+.projectcontainer p {
     text-align: center;
     margin: 0.05em 0;
 }
 
-@media screen and (max-width: 500px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header-right {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        width: 40%;
-    }
-
-    .header a {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .toggleheaderbutton {
-        display: block;
-    }
-}
-
-.plugingrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pluginimage {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
+.projectimage {
+    width: 500px;
+    height: 250px;
+    margin-top: 30px;
     border-radius: 8px;
     object-fit: cover;
 }
