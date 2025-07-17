@@ -6,8 +6,8 @@ body {
 html {
   height: 100%;
   background: 
-    linear-gradient(-45deg, #003804, #00490c, #033113, #003610) 0/ 500%;
-  animation: gradient 15s infinite alternate;
+    linear-gradient(-45deg, #002002, #018517, #003607, #018116) 0/ 500%;
+  animation: gradient 10s infinite alternate;
 }
 
 @keyframes gradient { to { background-position: 100% } }
@@ -36,10 +36,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(26, 27, 29);
+    background-color: rgb(26, 27, 29, 0.5);
     border-radius: 15px;
     outline: solid;
-    outline-color: rgb(0, 0, 0);
+    outline-color: rgb(0, 0, 0, 0.5);
     width: 700px;
     height: 375px;
     padding-bottom: 70px;
