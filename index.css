@@ -36,10 +36,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(26, 27, 29, 0.5);
+    background-color: rgba(26, 27, 29, 0.5);
     border-radius: 15px;
     outline: solid;
-    outline-color: rgb(0, 0, 0, 0.5);
+    outline-color: rgba(0, 0, 0, 0.5);
     width: 700px;
     height: 375px;
     padding-bottom: 70px;
