@@ -1,14 +1,15 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(-45deg, #002002, #018517, #003607, #018116) 0/ 500%;
+  animation: gradient 10s infinite alternate;
+}
+
 body {
+    min-height: 100%;
     font-family: 'Rubik', sans-serif;
     color: white;
     padding-bottom: 50px;
-}
-
-html {
-  height: 100%;
-  background: 
-    linear-gradient(-45deg, #002002, #018517, #003607, #018116) 0/ 500%;
-  animation: gradient 10s infinite alternate;
+    margin: 0;
 }
 
 @keyframes gradient { to { background-position: 100% } }
